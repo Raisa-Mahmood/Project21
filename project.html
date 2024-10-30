@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        h2{
+            color: rgb(18, 156, 156);
+            font-weight: 900;
+        }
+
+        div{
+            text-align: center;
+            padding: 20px;
+            color: darkslategrey;
+            font-size: 20px;
+            text-shadow: 2px 2px azure;
+            background-color: honeydew;
+            border: 2px solid darkgreen;
+            margin-top: 60px;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h2>Project 22</h2>
+
+    <!--Some Paragraph Elements-->
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    </div>
+
+    <script>
+
+        //pops and pushes
+        var flowers=[" Rose"," Sunflower"," Lilies"," and"," Lavenders"," Tulips"]
+        flowers.pop();
+        document.getElementById("p1").innerHTML = "Some flowers are " + flowers + ".";
+        flowers.pop();
+        flowers.push(" Tulips");
+        document.getElementById("p2").innerHTML = "Some flowers are " + flowers+".";
+        //pops and pushes
+
+        //Some infos about two sister
+        var info= {name:"Sohana", age:17, grade:"12th grade", hobby:"Gardening"};
+
+        document.getElementById("p3").innerHTML="The person's name is "+ info.name+ ", her age is "+ info.age + ", she's in " + info.grade + ", her hobby is " + info.hobby+".";
+
+        var info_2={age:"13"}
+
+        document.getElementById("p4").innerHTML="Millie is Sohana's younger sister.";
+        document.getElementById("p5").innerHTML="Her age is "+ info_2.age+ ".";
+        //Some infos about two sister
+
+        //function
+        function sum_of_age(a,b){
+            return(a+b);
+        }
+        function avg_of_age(a,b){
+            return sum_of_age(a,b)/2;
+        }
+        let avgvalue=avg_of_age(17,13)
+        //function
+
+        //result
+        document.getElementById("p6").innerHTML="The average of the two sisters' age is "+ avgvalue+ ".";
+
+    </script>
+</body>
+</html>
